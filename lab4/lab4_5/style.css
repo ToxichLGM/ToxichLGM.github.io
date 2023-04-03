@@ -1,6 +1,6 @@
 
 html {
-    background: linear-gradient(35deg, #8E73D2A6 0%, transparent, #63B9C8 65%, #436CBD38 80%, #756ED7B5 100%), linear-gradient(250deg, #72B8D8 0%, #467DC4 40%, #4F42BD 45%, #38A7C7 45%, #3E60BC 100%) 70% 100%/180% 180%;
+    background-image: url("blue-lagoon-ornamic.png");
 }
 
 .menu {
