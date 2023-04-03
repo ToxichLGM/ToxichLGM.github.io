@@ -5,13 +5,17 @@ html {
 
 .menu {
     display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .menu li {
     width: 450px;
-    list-style-type:armenian;
-    background: #50c878;
+    list-style-type:none;
+    background: #008080b8;
     position: relative;
+    float: left;
 }
 
 .menu li a {
@@ -27,14 +31,15 @@ html {
 }
 
 .menu li a:hover {
-    background: #50c878;
+    background: #7eb590;
     transition: all 1s;
 }
 
 .menu li ul {
     position: absolute;
-    left: 0;
-    top: 100%;
+    float: left;
+    
+    bottom: 100%;
     display: none;
     padding: 0;
 }
