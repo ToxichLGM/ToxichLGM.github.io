@@ -1,3 +1,4 @@
+/*+ no-beautify */
 .icon {
     width: 16px;
     height: 16px;
@@ -6,11 +7,16 @@
 }
   
 .open .icon {
-    background-position: 0 0px; /* вверх на 16px */
+    background-position: 0 -16px; /* вверх на 16px */
+    cursor: pointer;
+}
+ 
+.closed .icon {
+    background-position: 0 0px; /* по умолчанию */
     cursor: pointer;
 }
   
-.closed .icon {
+.leaf .icon {
     background-position: 0 -32px; /* вверх на 32px */
     cursor: text;
 }
