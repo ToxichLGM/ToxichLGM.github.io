@@ -6,25 +6,32 @@
 	<title>Оформление вертикального меню</title>
 	<style>
 		.menu {
-			width:15%;
-            height: 20%;
+			width:200px;
 			background:#369;
-		}
-				
-		.menu li {
-            margin: 8px;
+            padding: 1px;
 		}
 		
-		.menu li a {            
+		.menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+		}
+		
+		.menu li {
+            margin: 5px;
+		}
+		
+		.menu li a {
             background-color: white;
-            display: flex;
+            display: block;
+            text-decoration: none;
             text-transform: uppercase;
         
 		}
 		
 		.menu li a:hover {
-            background-color: rgb(230, 233, 247);
-        }
+            background-color: beige;
+		}
 	</style>
 </head>
 <body>
