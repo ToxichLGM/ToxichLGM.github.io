@@ -49,7 +49,7 @@ function fib(n) {
         return 0n; //возвращаем ноль при n=0
     }
     else {
-        for (i = BigInt(3); i <= n; i++) //алгоритм фибоначчи
+        for (let i = 3; i <= n; i++) //алгоритм фибоначчи
         {
             c = a + b;
             a = b;
@@ -63,9 +63,8 @@ function fib(n) {
 /**
  * Функция принимает целочисленное значение x и возвращает анонимную функцию. Анонимная функция возвращает результат сравнения значений y и x
  * @param {number} x целочисленное значение
- * @param {number} y для сравнения
- * @returns {number} анонимная функция
- */
+ * @returns {function} анонимная функция принимает y для сравнения c x и возвращает ...
+*/
 function compare(x) {
     return function (y) {
         if (y > x) return true;
@@ -81,8 +80,8 @@ function compare(x) {
  * @returns {number} сумма всех аргументов
  */
 function sum() {
-    var result = 0;
-    for (var i = 0; i < arguments.length; i++) {
+    let result = 0;
+    for (let i = 0; i < arguments.length; i++) {
         result += arguments[i]
     }
     return result;
