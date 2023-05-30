@@ -26,13 +26,13 @@ function sumTo(n) {
 /**
  * Возвращает факториал числа n 
  * @param {number} n аргумент
- * @returns {number} n!
+ * @returns {BigInt} n!
  */    
 function factorial(n) {  
     //возвращает факториал числа n 
     if (n<=1) return 1n;
     else {
-        res = BigInt (n) * BigInt(factorial(n-1))
+        res = BigInt (n) * factorial(n-1)
         return res;
     }  
 }
