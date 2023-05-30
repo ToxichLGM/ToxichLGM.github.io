@@ -51,7 +51,7 @@ function fib(n) {
     else {
         for (let i = 3; i <= n; i++) //алгоритм фибоначчи
         {
-            c = a + b;
+            let c = a + b;
             a = b;
             b = c;
         }
