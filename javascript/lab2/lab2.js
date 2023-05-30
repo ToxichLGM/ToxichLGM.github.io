@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Вычисляет степень числа
  * @param {number} x аргумент 
@@ -27,35 +28,33 @@ function sumTo(n) {
  * Возвращает факториал числа n 
  * @param {number} n аргумент
  * @returns {BigInt} n!
- */    
-function factorial(n) {  
+ */
+function factorial(n) {
     //возвращает факториал числа n 
-    if (n<=1) return 1n;
+    if (n <= 1) return 1n;
     else {
-        res = BigInt (n) * factorial(n-1)
+        res = BigInt(n) * factorial(n - 1)
         return res;
-    }  
+    }
 }
 /**
  * Возвращает n-е число Фибоначчи
  * @param {number} n аргумент
- * @returns {number} n-e число Фибоначчи
+ * @returns {BigInt} n-e число Фибоначчи
  */
-function fib(n){
+function fib(n) {
     //функция возвращает n-е число Фибоначчи
-    a = BigInt(1); // первое число Фиббоначи
-    b=BigInt(1); //второе число Фиббоначи
-    if (n== BigInt(0))
-    {
-        return BigInt(0); //возвращаем ноль при n=0
+    a = 1n; // первое число Фиббоначи
+    b = 1n; //второе число Фиббоначи
+    if (n == 0) {
+        return 0n; //возвращаем ноль при n=0
     }
-    else
-    { 
-        for (i = BigInt(3); i<=n; i++) //алгоритм фибоначчи
+    else {
+        for (i = BigInt(3); i <= n; i++) //алгоритм фибоначчи
         {
-            c = a+b;
-            a=b;
-            b=c;
+            c = a + b;
+            a = b;
+            b = c;
         }
         return b;
     }
@@ -68,14 +67,12 @@ function fib(n){
  * @param {number} y для сравнения
  * @returns {number} анонимная функция
  */
-function compare(x)
-{
-return function(y)
-{
-    if (y>x) return true;
-    else if (y<x) return false;
-    else if (y==x) return null;
-}
+function compare(x) {
+    return function (y) {
+        if (y > x) return true;
+        else if (y < x) return false;
+        else if (y == x) return null;
+    }
 }
 
 //функция возвращает сумму всех своих аргументов.
@@ -84,12 +81,10 @@ return function(y)
  * @param {number} i аргумент
  * @returns {number} сумма всех аргументов
  */
-function sum()
-{
-    var result=0; 
-    for (var i=0; i<arguments.length; i++)
-    {
-        result+=arguments[i] 
+function sum() {
+    var result = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        result += arguments[i]
     }
     return result;
 }
