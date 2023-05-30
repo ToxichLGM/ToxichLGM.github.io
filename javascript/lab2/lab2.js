@@ -33,8 +33,7 @@ function factorial(n) {
     //возвращает факториал числа n 
     if (n <= 1) return 1n;
     else {
-        res = BigInt(n) * factorial(n - 1)
-        return res;
+        return BigInt(n) * factorial(n - 1);
     }
 }
 /**
@@ -44,8 +43,8 @@ function factorial(n) {
  */
 function fib(n) {
     //функция возвращает n-е число Фибоначчи
-    a = 1n; // первое число Фиббоначи
-    b = 1n; //второе число Фиббоначи
+    let a = 1n; // первое число Фиббоначи
+    let b = 1n; //второе число Фиббоначи
     if (n == 0) {
         return 0n; //возвращаем ноль при n=0
     }
