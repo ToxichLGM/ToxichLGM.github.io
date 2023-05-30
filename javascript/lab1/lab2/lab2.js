@@ -1,9 +1,19 @@
+/**
+ * Вычисляет степень числа
+ * @param {number} x аргумент 
+ * @param {number} n степень 
+ * @returns {number} x^n
+ */
 function pow(x, n) {
     //Функция возвращает x в степени n
     let result = x ** n;
     return result;//возвращаем х в степени n
 }
-
+/**
+ * Вычисляет сумму чисел от 1 до n включительно
+ * @param {number} n конечное число 
+ * @returns {number} sum(1,n)
+ */
 function sumTo(n) {
     //вычисляет сумму чисел от 1 до n включительно
     let sum = 0;
@@ -13,7 +23,11 @@ function sumTo(n) {
     return sum;//возвращаем сумму
 }
 
-    
+/**
+ * Возвращает факториал числа n 
+ * @param {number} n аргумент
+ * @returns {number} n!
+ */    
 function factorial(n) {  
     //возвращает факториал числа n 
     if (n<=1) return 1n;
@@ -22,7 +36,11 @@ function factorial(n) {
         return res;
     }  
 }
-
+/**
+ * Возвращает n-е число Фибоначчи
+ * @param {number} n аргумент
+ * @returns {number} n-e число Фибоначчи
+ */
 function fib(n){
     //функция возвращает n-е число Фибоначчи
     a = BigInt(1); // первое число Фиббоначи
@@ -44,6 +62,12 @@ function fib(n){
 }
 
 //функция принимает целочисленное значение x и возвращает анонимную функцию. Анонимная функция возвращает результат сравнения значений y и x
+/**
+ * Функция принимает целочисленное значение x и возвращает анонимную функцию. Анонимная функция возвращает результат сравнения значений y и x
+ * @param {number} x целочисленное значение
+ * @param {number} y для сравнения
+ * @returns {number} анонимная функция
+ */
 function compare(x)
 {
 return function(y)
@@ -55,6 +79,11 @@ return function(y)
 }
 
 //функция возвращает сумму всех своих аргументов.
+/**
+ * функция возвращает сумму всех своих аргументов
+ * @param {number} i аргумент
+ * @returns {number} сумма всех аргументов
+ */
 function sum()
 {
     var result=0; 
@@ -64,3 +93,4 @@ function sum()
     }
     return result;
 }
+
