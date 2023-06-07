@@ -3,21 +3,25 @@
 
 <body>
   <script>
-    "use strict";
-    function sortByAge(arr) {
-  arr.sort((a, b) => a.age > b.age ? 1 : -1);
-}
-let evgen = { name: "Евгений", age: 20 };
-let andrey = { name: "Андрей", age: 16 };
-let vasy = { name: "Вася", age: 54 };
-let people = [ evgen , andrey , vasy ];
-alert(people[0].name); 
-alert(people[1].name); 
-alert(people[2].name); 
-sortByAge(people);
-alert(people[0].name); 
-alert(people[1].name); 
-alert(people[2].name); 
-</script>
+    'use strict';
+    let vova = { name: "Антоха", age: 20 };
+    let marina = { name: "Марина", age: 19 };
+    let andrew = { name: "Андрей", age: 44 };
+    let people = [vova, marina, andrew];
+/**
+ * Функция принимает на вход сравниваемые элементы массива
+ *
+ * @param {number} первый параметр. 
+ * @param {number} второй параметр.
+ * @return {number} a.age - b.age, возвращает результат сортировки.
+ **/
+    function Sorted(a, b) {
+            return a.age - b.age;
+        }
+        people.sort(Sorted);
+
+        for (let i in people) console.log(people[i]);
+  </script>
 </body>
-</html> 
+
+</html>
