@@ -45,7 +45,7 @@ export function fib(n) {
     }
     else {
         for (let i = BigInt(3); i <= n; i++) {
-           let c = a + b;
+            let c = a + b;
             a = b;
             b = c;
         }

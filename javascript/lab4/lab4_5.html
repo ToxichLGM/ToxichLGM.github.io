@@ -8,19 +8,19 @@
     let marina = { name: "Марина", age: 19 };
     let andrew = { name: "Андрей", age: 44 };
     let people = [vova, marina, andrew];
-/**
- * Функция принимает на вход сравниваемые элементы массива
- *
- * @param {number} первый параметр. 
- * @param {number} второй параметр.
- * @return {number} a.age - b.age, возвращает результат сортировки.
- **/
+    /**
+     * Функция принимает на вход сравниваемые элементы массива
+     *
+     * @param {number} первый параметр. 
+     * @param {number} второй параметр.
+     * @return {number} a.age - b.age, возвращает результат сортировки.
+     **/
     function Sorted(a, b) {
-            return a.age - b.age;
-        }
-        people.sort(Sorted);
+      return a.age - b.age;
+    }
+    people.sort(Sorted);
 
-        for (let i in people) console.log(people[i]);
+    for (let i in people) console.log(people[i]);
   </script>
 </body>
 
