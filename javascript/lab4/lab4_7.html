@@ -3,23 +3,25 @@
 
 <body>
     <script>
-        "use strict";
+        'use strict'
         function formatDate(date) {
 
-            const dd = date.getDate();
-            if (dd < 10) dd = '0' + dd;
+            let d = date.getDate();
+            if (d < 10) d = '0' + d;
 
-            const mm = date.getMonth() + 1;
-            if (mm < 10) mm = '0' + mm;
+            let m = date.getMonth() + 1;
+            if (m < 10) m = '0' + m;
 
-            const yy = date.getFullYear() % 100;
-            if (yy < 10) yy = '0' + yy;
+            let y = date.getFullYear() % 100;
+            if (y < 10) y = '0' + y;
 
-            return dd + '.' + mm + '.' + yy;
+            return d + '.' + m + '.' + y;
         }
 
-        const d = new Date(2003, 7, 6);
-        console.log(formatDate(d)); 
+        let d = new Date(2014, 0, 30); // 30 Янв 2014
+        let k = new Date(2007, 11, 5); // 05 Дек 2007
+        console.log(formatDate(d)); // '30.01.14'
+        console.log(formatDate(k));  
     </script>
 </body>
 
