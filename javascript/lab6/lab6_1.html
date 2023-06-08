@@ -2,26 +2,27 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Text</title>
+    <meta charset="UTF-8">
+    <title>Text</title>
 </head>
 
 <body>
-	<input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+    <input type="button" id="hider" value="Спрятать текст">
 
-	<div id="text">Текст</div>
+    <div id="text">Текст</div>
 
-	<script>
-		'use strict';
-		let but = document.getElementById("hider");
-		but.addEventListener('click', function () {
-			let but = document.getElementById("text");
-			if (but.style.display != "none")
-				but.style.display = "none";
-			else
-				but.style.display = "block";
-		}, false);
-	</script>
+    <script>
+    //При клике мышкой на кнопке выполнится код, указанный в атрибуте onclick
+    document.getElementById('hider').onclick = function(){
+			if (document.getElementById('text').style.display != 'none') {
+				document.getElementById('text').style.display = 'none';
+				document.getElementById('hider').value = 'Показать текст';
+			} else {
+				document.getElementById('text').style.display = 'block';
+				document.getElementById('hider').value = 'Спрятать текст';
+			}
+    }
+    </script>
 </body>
 
 </html>
